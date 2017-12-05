@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="FUt-oD-1Pd">
+                                <rect key="frame" x="53" y="302" width="269" height="63"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmz-h5-b2A">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.91372549020000005" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="If0-Rt-yPg"/>
+                                    <constraint firstAttribute="height" constant="50" id="Vew-RS-OzR"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b.png" translatesAutoresizingMaskIntoConstraints="NO" id="DQ1-GE-ng5">
+                                <rect key="frame" x="150" y="276" width="76" height="76"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qmz-h5-b2A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kW-xP-zTo"/>
+                            <constraint firstItem="FUt-oD-1Pd" firstAttribute="top" secondItem="DQ1-GE-ng5" secondAttribute="bottom" constant="-50" id="Ewi-bo-D1d"/>
+                            <constraint firstItem="qmz-h5-b2A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JXL-L4-mf6"/>
+                            <constraint firstItem="DQ1-GE-ng5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QkI-oS-I9d"/>
+                            <constraint firstItem="FUt-oD-1Pd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kDH-4e-JSB"/>
+                            <constraint firstItem="FUt-oD-1Pd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yDZ-zJ-YAN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgview" destination="qmz-h5-b2A" id="H6I-uP-A0Z"/>
+                        <outlet property="bigView" destination="DQ1-GE-ng5" id="YNs-W9-VAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b.png" width="76" height="76"/>
+        <image name="bg.png" width="269" height="63"/>
+    </resources>
+</document>
